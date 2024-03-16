@@ -8,7 +8,7 @@ export function sendMail(req, res) {
   );
 
   client.sendEmail({
-    From: "sender@example.com",
+    // From: "sender@example.com",
     To: "recipient@example.com",
     Subject: "Test",
     TextBody: "Hello from Postmark!",
