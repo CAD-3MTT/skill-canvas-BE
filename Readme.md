@@ -4,13 +4,18 @@
 
 Initialize project by typing `npm init`
 
-then create a index.js file in the root of your project
+accept the defaults for most of the items
 
-modify the package.json to resemble
+then create a `index.js` file in the root of your project if this is not done automatically when creating the project via `npm init`
+
+modify the package.json to resemble by adding start in the scripts part of `package.json`
 
 # ![package](assets\package-json-scripts.PNG)
 
-then in the index.js type the following
+add express as a dependency in the project
+by running `npm install express`
+
+then in the `index.js` type the following
 
 ```js
 const express = require("express");
@@ -43,7 +48,7 @@ app.listen(port, () => {
 });
 ```
 
-![index.js source code](assets\index-js.PNG)
+<!-- ![index.js source code](assets\index-js.PNG) -->
 
 Note: before you make the following a git repo add and `.env` file to include the following to prevent the unneeded files from being pushed to git
 
